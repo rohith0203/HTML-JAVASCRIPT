@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+   #slider{
+    overflow:hidden;
+   }
+   #slider figure{
+    position: relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation: 20s flex infinite;
+    
+   }
+    #slider figure div{
+        float:left;
+        width:20%;
+    }
+    @keyframes slider{
+        0%{
+            left:0;
+        }
+        30%{
+            left:0;
+        }
+        60%{
+            left:-100%;
+        }
+        90%{
+            left:300%;
+        }
+    }
+    </style>
+</head>
+<body>
+         
+<div id="slider">
+<figure>
+    <div><h1>hi</h1></div>
+    <div><h1>hello</h1></div>   
+    <div><h1>byee</h1></div>
+
+
+</figure>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

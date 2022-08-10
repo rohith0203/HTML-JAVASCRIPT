@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="fun()">onclick</button>
+    <p id="demo"></p>
+    <script>
+        function fun()
+        {
+   const fruits=["orange","mangooo","apple","papayaaa"];
+   let txt=" ";
+   const fruit=fruits.keys();
+   
+   for(let x of fruit)
+   {
+    txt+=x;
+   }
+  document.getElementById("demo").innerHTML=txt;
+
+        }
+
+
+
+    </script>
+</body>
+</html>

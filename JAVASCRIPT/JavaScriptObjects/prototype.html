@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+   <input type="button" value="click" onmouseover="fun()" onmouseleave="fun2()"></input>
+    <p id="demo">hello</p>
+    <center>
+    <script>
+        function fun()
+        {
+ function cars(name,cost,color,model)
+ {
+   this.carName= name;
+   this.price= cost;
+   this.color= color;
+   this.model= model;
+ }
+const data = new cars("Alto",600000,"Grey","Bs6");
+document.getElementById("demo").innerHTML=data.carName+"cost is :"+data.price+"color is :"+data.color+"model is :"+data.model;
+}
+function fun2()
+{
+document.getElementById("demo").innerHTML="";
+}
+console.log("car-name", data);
+debugger
+    </script>
+</center>
+
+
+
+</body>
+</html>

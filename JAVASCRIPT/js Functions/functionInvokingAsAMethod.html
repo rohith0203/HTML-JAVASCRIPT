@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseup="mx()">mouseup</button>
+    <p id="demo"></p>
+    <script>
+        function mx()
+        {
+        const data={
+         dataType:"string",
+         consist:"alphabet",
+         result:function()
+         {
+            return this.dataType+" "+this.consist;
+         }
+        }
+        document.getElementById("demo").innerHTML=data.result();
+    }
+            </script>
+</body>
+</html>

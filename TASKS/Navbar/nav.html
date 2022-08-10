@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .top{
+            width:1900px;
+            box-shadow:2px 2px 5px green;
+            background-color: bisque;
+        }
+        #hide{
+            display: none;
+            width:150px;
+            
+            background-color: rgb(189, 245, 245);
+            box-shadow: 2px 2px 5px red;
+            
+        }
+        .close{
+            margin-left: 85px;
+        }
+#hide a{
+    display:block;
+    margin-top:50%;
+text-align: center;}
+    </style>
+</head>
+<body>
+
+    <div class="top" >
+        <button   onclick="fun()">&#9776;</button><span>MENU</span>
+        
+      </div>
+      
+        <div id="hide">
+            <button class="close" onclick="sad()">Close &times;</button>
+            <a href="#">AAAAAAAAAAA</a>
+            <a href="#">BBBBBBBBBBB</a>
+            <a href="#">CCCCCCCCCCC</a>
+
+        </div>
+
+        
+    <script>
+function fun()
+{
+    document.getElementById("hide").style.display ="block";
+}
+function sad()
+{
+    document.getElementById("hide").style.display ="none";
+}
+    </script>
+</body>
+</html>

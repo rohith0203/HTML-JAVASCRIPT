@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <button onclick="m()" >on-click</button> -->
+    <script>
+        // function m()
+        // {
+class WildAnimal
+{
+    constructor(voice)
+    {
+        this.voice=voice;
+    }
+    fst()
+    {
+        return this.voice;
+    }
+}
+class DomesticAnimal extends WildAnimal{
+    constructor(voice,horse)
+    {
+        super(voice);
+        this.horse=horse;
+    }
+    snd()
+    {
+        return this.fst()+" it screams like dog"+this.horse;
+    }
+}
+const data=new DomesticAnimal("kikikikikkk","horse");
+console.log("data",data);
+document.getElementById("demo").innerHTML=data.snd();
+// }
+</script>
+</body>
+</html>

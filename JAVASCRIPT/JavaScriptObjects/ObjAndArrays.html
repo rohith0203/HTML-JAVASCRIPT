@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Nested JavaScript Objects and Arrays.</h2>
+<p id="demo"></p>
+
+<script>
+let s = "";
+const myObj = {
+  name: "rohith",
+  age: 21,
+  job: [
+    {Dep:"Fornt-end",tech:["flutter", "react", "UI"]},
+    {Dep:"Back-end", tech:["Hibris", "Fluent"]},
+    
+  ]
+}
+
+for (let i in myObj.job) {
+  s=s+"<h1>"+ myObj.job[i].Dep+"</h1>";
+  for (let j in myObj.job[i].tech) {
+    s=s+ myObj.job[i].tech[j]+"<br></br>";
+  }
+}
+
+document.getElementById("demo").innerHTML = s;
+</script>
+
+</body>
+</html>

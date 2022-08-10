@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id ="x" style></p>
+    <script>
+   const College={
+    collegeName:"Bhavan's Vivekananda ",
+    area:"ECIL",
+    entrains:"3 Gates",
+    pincode:500032,
+    language:"",
+    // set lang(value)
+    // {
+    //     return this.language=value;
+    // }
+    get lang(){
+        return this.collegeName+" "+this.area;
+    }
+    };
+         //College.lang="Telugu";
+        document.getElementById("x").innerHTML=College.lang;
+        //document.getElementById("x").innerHTML=College.language;
+    </script>
+
+    
+</body>
+</html>

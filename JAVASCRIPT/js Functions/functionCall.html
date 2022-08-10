@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const Baloon={
+        details:function()
+        {
+           return  this.color+" "+this.shape;
+        }
+    }
+         const Baloon1={
+            color:"red",
+            shape:"circle",
+         }
+         const Baloon2={
+            color:"blue",
+            shape:"ellipse",
+         }
+
+         document.getElementById("demo").innerHTML=Baloon.details.call(Baloon1);
+        
+    </script>
+</body>
+</html>

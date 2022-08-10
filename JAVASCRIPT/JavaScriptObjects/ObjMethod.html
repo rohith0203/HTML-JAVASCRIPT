@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   </head>
+<body>
+     <script>
+    
+    const person = {
+      firstName: "John",
+      lastName: "cena",
+      id: 52566,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+    
+    
+    document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+    <strong id="demo"></strong>
+</body>
+</html>

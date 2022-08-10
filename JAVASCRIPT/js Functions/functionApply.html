@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const data={
+            function()
+            {
+                return this.name+" "+this.age;
+            }
+        }
+        const data2={
+            name:"rohith",
+            age:21,
+        }
+        document.getElementById("demo").innerHTML=data.function.apply(data2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#s1
+{
+border:2px dotted blue;
+box-shadow:2px 2px 2px green;
+}
+#s2
+{
+border:2px dotted green;
+box-shadow:2px 2px 2px blue;
+}

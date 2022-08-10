@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="json()" value="mouseover">mouseover</button><br>
+    <p id="demo"></p>
+    <script>
+   function json()
+   {
+   const data={name:"rohith",age:21,home:"balanagar"};
+
+   const data1=JSON.stringify(data);
+   document.getElementById("demo").innerHTML=data1;
+   
+
+
+
+
+   }
+
+
+
+
+
+    </script>
+</body>
+</html>

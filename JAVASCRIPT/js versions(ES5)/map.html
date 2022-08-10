@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <button onmousemove="fun()" >mousemove</button>
+    <p id="demo"></p>
+    <script>
+        function fun()
+        {
+        const people = [
+            { name: "rohith", age: 21, occupation: "frontend" },
+            { name: "srinu", age: 23, occupation: "backend" },
+            { name: "charan", age: 22, occupation: "L1" }
+        ];
+        let toddlers = people.filter(person=> person.age>21)
+        
+        
+      
+    
+
+        let txt=" ";
+
+        // for(let x of people)
+        // {
+        //     txt +=x.name+"<br>";
+        // }
+        for(let x in toddlers)
+        {
+            txt+=toddlers[x].name+" "+toddlers[x].age+" "+toddlers[x].occupation+"<br>";
+            
+
+        }
+
+
+
+        document.getElementById("demo").innerHTML=txt   ;
+        }
+    </script>
+</body>
+
+</html>

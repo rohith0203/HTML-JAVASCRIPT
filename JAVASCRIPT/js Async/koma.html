@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>wait for a minute</p>
+    <p id="demo"></p>
+    <script>
+           function final(argument)
+           {
+            document.getElementById("demo").innerHTML=argument;
+           }
+
+           function get(Callback)
+           {
+            let req=new XMLHttpRequest();
+            req.open('GET',"koma2.html");
+            req.onload=function()
+            {
+                if(req.status==200)
+                {
+                Callback(this.responseText);
+                }
+                else
+                {
+                    Callback("error:"+req.status);
+                }
+            }
+                    req.send();
+        }
+        get(final);
+    </script>
+</body>
+</html>

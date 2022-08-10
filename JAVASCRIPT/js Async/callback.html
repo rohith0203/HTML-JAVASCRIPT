@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function display(finalData)
+        {
+            document.getElementById("demo").innerHTML="addition of two numbers "+finalData;
+        }
+        function cal(in1,in2,Callback)
+        {
+            let sum=in1+in2;
+            Callback(sum);
+        }
+        cal(2,3,display);
+    </script>
+</body>
+</html>

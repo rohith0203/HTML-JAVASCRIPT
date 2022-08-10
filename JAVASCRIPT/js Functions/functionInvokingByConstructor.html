@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onmouseout="result()">mouseout</button>
+    <script>
+        function result()
+        {
+      function max(input1,input2)
+      {
+        this.ans1=input1;
+        this.ans2=input2;
+        this.final=input1+input2;
+      }
+      const x=new max(1,"one");
+      document.getElementById("demo").innerHTML=x.final;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="X"></p>
+    
+    <script>
+        const emp={
+            name:"rohith",
+            surname:"daram",
+            fullName:function()
+            {
+                return( this.name+" "+this.surname).toUpperCase();
+            }
+        }
+        document.getElementById("X").innerHTML=emp.fullName();
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+    class Car{
+constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+}
+
+let name=prompt("May I Know Your Name Plss");
+let year=prompt("Enter your birth year");
+     
+     //let obj2=new Car("charan","1999");
+     if(name!=null && year!=null)
+     {
+        let obj1=new Car(name,year);
+      document.getElementById("demo").innerHTML=" hi "+obj1.name+" welcome to techouts "+"  I think u born at "+obj1.year;
+     }
+     else{
+        document.getElementById("demo").innerHTML="pls enter the valid info";
+     }
+    
+</script>
+</body>
+</html>

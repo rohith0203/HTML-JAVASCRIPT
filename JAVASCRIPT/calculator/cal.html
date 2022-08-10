@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+        let n1=parseInt(prompt("enter the first number"));
+        let n2=parseInt(prompt("enter the second number"));
+        let op=prompt("enter the + or - or * or /" );
+       x();
+
+
+        function x()
+{        
+       if(op=="+")
+       {
+        console.log(n1+n2);
+       }
+       if(op=="-")
+       {
+        console.log(n1-n2);
+       }
+       if(op=="*")
+       {
+        console.log(n1*n2);
+       }
+       if(op=="/")
+       {
+        console.log(n1/n2);
+       }
+
+}
+        }
+    </script>
+
+    <button onclick="fun()">calculator</button>
+</body>
+</html>

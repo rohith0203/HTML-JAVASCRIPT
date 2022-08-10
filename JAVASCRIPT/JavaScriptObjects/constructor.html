@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    function con(id,name,dep,sal)
+    {
+        this.id=id;
+        this.name=name;
+        this.dep=dep;
+        this.sal=sal;
+    }
+const empDetails=new con(12,"rohith","Developer",12000);
+
+document.getElementById("demo").innerHTML="EMp Id is:"+empDetails.id+"EMp name is:"+empDetails.name+"EMp department is:"+empDetails.dep;
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button onmouseout="fun()">mouseout</button><br>
+    <p id="demo"></p>
+    <script>
+        function fun() {
+            let book = [{
+                name: "harry potter 1",
+                price: 100,
+            },
+            {
+                name: "life of pi",
+                price: 80,
+            },
+            {
+                name: "doreomon",
+                price: 60,
+            }
+            ];
+                   
+
+
+            
+            document.getElementById("demo").innerHTML=Object.getOwnPropertyNames(book);
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
